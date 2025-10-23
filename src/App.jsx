@@ -2,14 +2,16 @@
 import Header from './components/Header'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from './components/Footer';
+import { Navigate, BrowserRouter, Routes, Route } from "react-router-dom";
 
-// import './App.css'
 
 function App() {
 
   return (
     <div>
+      {/* <BrowserRouter> */}
       <Header/>
+      {/* </BrowserRouter> */}
       <Footer/>
     </div>
   )
