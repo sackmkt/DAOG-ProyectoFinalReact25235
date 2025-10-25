@@ -8,7 +8,7 @@ export default function Header () {
 
 
     return (
-            <header className="bg-dark py-4 shadow-sm w-100">
+            <header className="bg-dark py-4 shadow-sm w-100 mb-4">
                 <Navbars/>
             </header>
 

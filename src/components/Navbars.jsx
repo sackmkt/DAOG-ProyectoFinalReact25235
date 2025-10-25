@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar, Button} from "react-bootstrap";
-import { Navigate, BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../estilos/Header.css';
 
 export default function Navbars (){
@@ -13,10 +13,8 @@ return (
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav"> 
                         <Nav className="me-auto">
-                            <Nav.Link href="./">Inicio</Nav.Link>
-                            <Nav.Link href="./">Productos</Nav.Link>
-                            <Nav.Link href="./">Novedades</Nav.Link>
-                            <Nav.Link href="./">Contacto</Nav.Link>
+                            <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+                            <Nav.Link as={Link} to={"/Categoria"}>Categoria</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link href="./">Carrito</Nav.Link>
